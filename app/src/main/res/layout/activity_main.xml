@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--displays background-->
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--displays title-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/pokemonsolid"
+            android:padding="10dp"
+            android:text="Poke Swap"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+        <!--displays enter your name-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/pokemonsolid"
+            android:paddingTop="50dp"
+            android:text="Enter your name:"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp" />
+        <!--displays the area to enter your name-->
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <!--instructions button, sends them to instructions-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="200dp"
+            android:backgroundTint="#BB0005"
+            android:fontFamily="@font/pokemonsolid"
+            android:onClick="click"
+            android:text="Click to start"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LyGridGame</string>
+
+    <string-array name="songs">
+        <item>None</item>
+        <item>victory vs wild pokemon</item>
+        <item>victory vs trainer</item>
+    </string-array>
+</resources>

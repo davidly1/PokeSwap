@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--displays background-->
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--displays settings heading-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/pokemonsolid"
+            android:padding="5dp"
+            android:text="Settings"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+        <!--choose your song text-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/pokemonsolid"
+            android:padding="10dp"
+            android:text="Choose your song:"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp" />
+        <!--dropdown box -->
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown" />
+        <!--choose your background text-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/pokemonsolid"
+            android:padding="10dp"
+            android:text="Rate the game!"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp" />
+        <!--radio buttons for rating-->
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:id="@+id/radioGroup">
+            <!--original background radio button-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/normalbg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/pokemonsolid"
+                android:text="1"
+                android:onClick="checkButton"
+                android:textAppearance="?android:textAppearanceMedium" />
+            <!--lake background radio button-->
+            <RadioButton
+                android:id="@+id/no_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/pokemonsolid"
+                android:onClick="checkButton"
+                android:text="2"
+                android:textAppearance="?android:textAppearanceMedium" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/pokemonsolid"
+                android:text="3"
+                android:onClick="checkButton"
+                android:textAppearance="?android:textAppearanceMedium" />
+            <RadioButton
+                android:id="@+id/four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/pokemonsolid"
+                android:text="4"
+                android:onClick="checkButton"
+                android:textAppearance="?android:textAppearanceMedium" />
+            </LinearLayout>
+            <RadioButton
+                android:id="@+id/five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/pokemonsolid"
+                android:text="5"
+                android:onClick="checkButton"
+                android:textAppearance="?android:textAppearanceMedium" />
+        </RadioGroup>
+        <!--apply button to apply background changes-->
+        <Button
+            android:id="@+id/button_apply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#BB0005"
+            android:fontFamily="@font/pokemonsolid"
+            android:onClick="check"
+            android:text="Apply"
+            android:textColor="#FFFFFF" />
+
+        <!--game button, sends them to game-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#BB0005"
+            android:fontFamily="@font/pokemonsolid"
+            android:onClick="click"
+            android:text="Click to go back"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>
