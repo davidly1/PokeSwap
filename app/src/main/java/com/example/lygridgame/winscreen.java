@@ -9,7 +9,6 @@ import android.view.View;
 
 //Name: David Ly
 //Date: January 11, 2021
-//Purpose: Unit 5 Project - Grid Game
 
 public class winscreen extends AppCompatActivity {
 
