@@ -21,7 +21,6 @@ import java.io.IOException;
 
 //Name: David Ly
 //Date: January 11, 2021
-//Purpose: Unit 5 Project - Grid Game
 
 public class Game extends AppCompatActivity {
 
